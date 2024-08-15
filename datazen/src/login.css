@@ -1,107 +1,147 @@
-/* Tailwind base, components, and utilities */
+/* Import Tailwind base styles, components, and utility classes */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Apply base styles to the body */
 body {
-    @apply bg-white text-gray-900;
+    @apply bg-white text-gray-900; /* Set background to white and text color to dark gray */
 }
 
+/* Container for the login section */
 .login-container {
-    @apply flex h-screen bg-white;
+    @apply flex h-screen bg-white; /* Use flexbox layout, full screen height, and white background */
 }
 
+/* Form container */
 .login-form {
-    @apply w-full md:w-3/4 lg:w-2/3 p-8 flex flex-col md:flex-row bg-white rounded-lg shadow-lg;
+    @apply w-full md:w-3/4 lg:w-2/3 p-8 flex flex-col md:flex-row bg-white rounded-lg shadow-lg; 
+    /* Full width on small screens, narrower on medium and large screens */
+    /* Padding all around, flexbox layout for column (on small screens) and row (on medium screens) */
+    /* White background, rounded corners, and drop shadow */
 }
 
+/* Title styling */
 .login-title {
-    @apply text-2xl font-bold text-center mb-4;
+    @apply text-2xl font-bold text-center mb-4; /* Large, bold text centered with bottom margin */
 }
 
+/* Subtitle styling */
 .login-subtitle {
-    @apply text-gray-600 text-center mb-4;
+    @apply text-gray-600 text-center mb-4; /* Medium gray text, centered with bottom margin */
 }
 
+/* Input group container */
 .input-group {
-    @apply w-full mb-4 flex flex-col;
+    @apply w-full mb-4 flex flex-col; /* Full width, bottom margin, and flexbox column layout */
 }
 
+/* Label styling within input group */
 .input-group label {
-    @apply mb-2 text-gray-700 text-left; /* Ensure text is left-aligned */
+    @apply mb-2 text-gray-700 text-left; /* Bottom margin, dark gray text, left-aligned */
 }
 
+/* Input styling within input group */
 .input-group input {
-    @apply p-2 text-base border-black border rounded bg-white text-black;
+    @apply p-2 text-base border-black border rounded bg-white text-black; 
+    /* Padding, standard text size, black border, rounded corners, white background, and black text */
 }
 
+/* Input focus state styling */
 .input-group input:focus {
-    @apply outline-none ring-1 ring-blue-500;
+    @apply outline-none ring-1 ring-blue-500; /* Remove outline, add blue ring on focus */
 }
 
+/* Container for remember me and forgot password */
 .remember-forgot {
-    @apply w-full flex justify-between items-center mb-4;
+    @apply w-full flex justify-between items-center mb-4; 
+    /* Full width, flexbox layout to space elements, align items center, and bottom margin */
 }
 
+/* Remember me checkbox container */
 .remember-me {
-    @apply flex items-center;
+    @apply flex items-center; /* Flexbox layout, align items center */
 }
 
+/* Checkbox styling */
 .remember-me input {
-    @apply mr-2;
+    @apply mr-2; /* Right margin to space out from label */
 }
 
+/* Forgot password link styling */
 .forgot-password {
-    @apply text-sm text-blue-600 hover:underline;
+    @apply text-sm text-blue-600 hover:underline; /* Small blue text that underlines on hover */
 }
 
+/* Login button styling */
 .login-button {
     @apply w-full py-2 text-base bg-black text-white rounded cursor-pointer transition-colors hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50;
+    /* Full width, padding, standard text size, black background, white text, rounded corners */
+    /* Cursor changes to pointer on hover, smooth color transition */
+    /* Changes background color on hover, removes focus outline, adds focus ring */
 }
 
+/* Google Sign-In button styling */
 .google-signin {
     @apply w-full py-2 text-base bg-white text-black border border-gray-300 rounded flex items-center justify-center cursor-pointer transition-colors mt-4 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50;
+    /* Full width, padding, standard text size, white background, black text */
+    /* Gray border, rounded corners, flexbox layout, centered content */
+    /* Cursor pointer on hover, smooth color transition, top margin */
+    /* Background changes to light gray on hover, removes focus outline, adds focus ring */
 }
 
+/* Google icon styling */
 .google-icon {
-    @apply w-5 h-5 mr-2;
+    @apply w-5 h-5 mr-2; /* Set width and height, right margin to space out from text */
 }
 
+/* Signup text container */
 .signup-text {
-    @apply text-center mt-4;
+    @apply text-center mt-4; /* Center text with top margin */
 }
 
+/* Signup link styling */
 .signup-text a {
-    @apply text-blue-600 hover:underline;
+    @apply text-blue-600 hover:underline; /* Blue text that underlines on hover */
 }
 
+/* Image container for the login page */
 .login-image {
     @apply w-full md:w-1/2 relative flex justify-center items-center bg-gray-200 overflow-hidden;
+    /* Full width, half-width on medium screens, relative positioning */
+    /* Flexbox layout, centered content, gray background, hidden overflow */
     margin-top: -20px; /* Adjust margin to move the image up */
 }
 
+/* Image styling */
 .login-image img {
-    @apply w-full h-full object-cover;
+    @apply w-full h-full object-cover; /* Image takes up full width and height, covers container */
     margin-top: -20px; /* Adjust margin to move the image up */
 }
 
+/* Quote styling, placed at the bottom left of the image */
 .quote {
     @apply absolute bottom-8 left-8 text-lg bg-white bg-opacity-80 p-4 rounded text-gray-900;
+    /* Positioned absolutely, 8 units from the bottom and left */
+    /* Large text, white background with opacity, padding, rounded corners, dark gray text */
 }
 
+/* Datazen logo container */
 .datazen-logo {
-    @apply flex items-center mb-8; /* Flexbox for horizontal alignment and margin for spacing */
+    @apply flex items-center mb-8; /* Flexbox layout, aligned center, bottom margin */
 }
 
+/* Datazen logo image styling */
 .datazen-logo img {
-    @apply w-10 h-10 mr-2; /* Size of the logo and margin-right for spacing */
+    @apply w-10 h-10 mr-2; /* Set width and height, right margin to space out from text */
 }
 
+/* Datazen logo text styling */
 .datazen-logo span {
-    @apply text-2xl font-bold; /* Styling for the text next to the logo */
+    @apply text-2xl font-bold; /* Large, bold text */
 }
 
-
+/* Custom width for the image container */
 .custom-image-width {
-    @apply w-5/6 lg:w-5/6; /*  */
+    @apply w-5/6 lg:w-5/6; /* Set custom width for the image container */
 }

@@ -1,0 +1,96 @@
+/* Tailwind base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply base styles to the body */
+body {
+    @apply bg-white text-gray-900;
+}
+
+/* Container for the signup section */
+.signup-container {
+    @apply flex h-screen bg-white;
+}
+
+/* Form container */
+.signup-form {
+    @apply w-full md:w-3/4 lg:w-2/3 p-8 flex flex-col md:flex-row bg-white rounded-lg shadow-lg;
+}
+
+/* Title styling */
+.signup-title {
+    @apply text-2xl font-bold text-center mb-4;
+}
+
+/* Subtitle styling */
+.signup-subtitle {
+    @apply text-gray-600 text-center mb-4;
+}
+
+/* Input group container */
+.input-group {
+    @apply w-full mb-4 flex flex-col;
+}
+
+/* Label styling within input group */
+.input-group label {
+    @apply mb-2 text-gray-700 text-left; /* Ensure text is left-aligned */
+}
+
+/* Input styling within input group */
+.input-group input {
+    @apply p-2 text-base border-black border rounded bg-white text-black;
+}
+
+/* Input focus state styling */
+.input-group input:focus {
+    @apply outline-none ring-1 ring-blue-500;
+}
+
+/* Sign up button styling */
+.signup-button {
+    @apply w-full py-2 text-base bg-black text-white rounded cursor-pointer transition-colors hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50;
+}
+
+/* Sign in link styling */
+.signin-link {
+    @apply text-center text-gray-700 mt-4;
+}
+
+/* Sign in link anchor styling */
+.signin-link a {
+    @apply text-blue-600 hover:underline;
+}
+
+/* Image container for the signup page */
+.signup-image {
+    @apply w-full md:w-1/2 relative flex justify-center items-center bg-gray-200 overflow-hidden;
+    margin-top: -20px; /* Adjust margin to move the image up */
+}
+
+/* Image styling */
+.signup-image img {
+    @apply w-full h-full object-cover;
+    margin-top: -20px; /* Adjust margin to move the image up */
+}
+
+/* Datazen logo container */
+.datazen-logo {
+    @apply flex items-center mb-8; /* Flexbox for horizontal alignment and margin for spacing */
+}
+
+/* Datazen logo image styling */
+.datazen-logo img {
+    @apply w-10 h-10 mr-2; /* Size of the logo and margin-right for spacing */
+}
+
+/* Datazen logo text styling */
+.datazen-logo span {
+    @apply text-2xl font-bold; /* Large, bold text */
+}
+
+/* Custom width for the image container */
+.custom-image-width {
+    @apply w-5/6 lg:w-5/6; /* Custom width for the image container */
+}
